@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif;        
+}
+
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    
+}
+
+
+.header {
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 56px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 58px;
+
+    color: #00376B;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-right: 72px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 29px;
+    color: #00376B;
+    
+}
+
+.nav-link:last-child{
+    margin-right: 0;
+}
+
+
+
+.nav-link {
+    display: inline-block;
+    color: #00376B;;
+    text-decoration: none;
+}
+
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #00376B;;
+    transition: width .3s;
+}
+
+.nav-active:after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: #00376B;;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.header-row {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-contect {
+    width: 470px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    
+    color: #00376B;
+}
+
+.header-text {
+    width: 416px;
+}
+
+.header-text p {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    
+    color: #00376B;
+
+}
+
+.header-img {
+    width: 644px;
+    height: 483px;
+}
+
+.btn {
+    border: none;
+    background: none;
+    width: 200px;
+    height: 58px;
+    border: 2px solid #4776E6;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 32px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    font-size: 25px;
+    line-height: 37px;
+    color: #4776E6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 350;
+}
+
+.btn:hover {
+    background-color: #4776E6;
+    color: white;
+    transition: .2s;
+}
+
+.blop {
+    position: absolute;
+    width: 350px;
+}
+
+
+.blop-2{
+    position: absolute;
+    width: 100%;
+}
+
